@@ -1,0 +1,223 @@
+
+/* 一括指定 */
+
+body{
+  background-image: url(../img/watercolor_00056.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-attachment: fixed;
+  color: black;
+  font-family: "Courier New", Courier, "AXIS Std", monospace, Arial, serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic";
+  font-weight: 100;
+  display: flex;
+  min-width: 100vh;
+}
+
+h1{
+  margin: 0;
+  padding: 16px;
+  padding-left: 0;
+}
+
+h2{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
+}
+
+h3{
+  margin: 0;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+span{
+  font-size: 33px;
+  color: green;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+section{
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+
+
+/* 部分指定 */
+
+aside{
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  font-size: 20px;
+}
+
+aside ul{
+  padding: 30px;
+  line-height: 50px;
+}
+
+aside a:hover{
+  color: green;
+  font-size: 25px;
+}
+
+
+
+main{
+  flex: 1;
+  margin-left: 15%;
+}
+
+
+
+/* 部分の部分指定 */
+
+
+/* about */
+
+.about img{
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.about .center ul li{
+  padding-left: 10px;
+}
+
+.about .center{
+  display: flex;
+}
+
+.about .right{
+  align-self: center;
+}
+
+
+
+/* works */
+
+.works img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding-left: 10px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.works .box1:hover{
+  opacity: .9;
+}
+.works .box2:hover{
+  opacity: .9;
+}
+.works .box3:hover{
+  opacity: .9;
+}
+
+.works .works1{
+  display: flex;
+}
+
+.works p{
+  text-align: center;
+}
+
+
+
+/* contact */
+
+.contact a:hover{
+  color: green;
+  font-size: 20px;
+}
+
+
+
+/* レスポンシブ */
+
+@media (min-width:300px) and (max-width:800px){
+  body{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  p{
+    padding: 0;
+  }
+
+  aside{
+    display: none;
+  }
+
+  main{
+    margin: 0;
+    text-align: center;
+  }
+
+  section{
+    padding: 0;
+    padding-bottom: 70px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .about img{
+    margin: 0;
+    padding: 0;
+  }
+
+  .about .center ul li{
+    padding: 0;
+  }
+
+  .about .center{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .works .works1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work .work1 .box1 img{
+    padding: 0;
+  }
+
+  .work .work1 .box1 p{
+    padding-bottom: 30px;
+  }
+
+  .contact{
+    display: block;
+  }
+
+
+  }
